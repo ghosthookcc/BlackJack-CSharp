@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\19kathor\\source\\repos\\Blackjack\\Blackjack.csproj": {}
+    "C:\\Users\\kaspe\\OneDrive\\Desktop\\BlackJack-CSharp\\Blackjack.csproj": {}
   },
   "projects": {
-    "C:\\Users\\19kathor\\source\\repos\\Blackjack\\Blackjack.csproj": {
+    "C:\\Users\\kaspe\\OneDrive\\Desktop\\BlackJack-CSharp\\Blackjack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\19kathor\\source\\repos\\Blackjack\\Blackjack.csproj",
+        "projectUniqueName": "C:\\Users\\kaspe\\OneDrive\\Desktop\\BlackJack-CSharp\\Blackjack.csproj",
         "projectName": "Blackjack",
-        "projectPath": "C:\\Users\\19kathor\\source\\repos\\Blackjack\\Blackjack.csproj",
-        "packagesPath": "C:\\Users\\19kathor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\19kathor\\source\\repos\\Blackjack\\obj\\",
+        "projectPath": "C:\\Users\\kaspe\\OneDrive\\Desktop\\BlackJack-CSharp\\Blackjack.csproj",
+        "packagesPath": "C:\\Users\\kaspe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kaspe\\OneDrive\\Desktop\\BlackJack-CSharp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\19kathor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kaspe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

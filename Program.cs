@@ -23,14 +23,15 @@ namespace Blackjack
 
     public class Card
     {
-        private int cardvalue;
+        private string cardtype; 
+        private int bestvalue;
         private SuitType suittype;
         private int blackjackvalue;
 
-        public int CardValue
+        public string CardType
         {
-            set { cardvalue = value; }
-            get { return cardvalue; }
+            set { cardtype = value; }
+            get { return cardtype; }
         }
 
         public SuitType Suit
@@ -45,15 +46,15 @@ namespace Blackjack
             get { return blackjackvalue; }
         }
 
-        public Card(int value, SuitType suit)
+        public Card(string value, SuitType suit)
         {
-            this.CardValue = value;
+            this.CardType = value;
             this.Suit = suit;
         }
 
         public override string ToString()
         {
-            return (cardvalue + suittype.ToString());
+            return (cardtype + suittype.ToString());
         }
     }
 
@@ -89,19 +90,37 @@ namespace Blackjack
 
         public void ResetAndShuffle()
         {
+            (string CardType, int CardValue)[] cardInfo = new (string, int)[]
+            {
+                ("2", 2),
+                ("3", 3),
+                ("4", 4),
+                ("5", 5),
+                ("6", 6),
+                ("7", 7),
+                ("8", 8),
+                ("9", 9),
+                ("10", 10),
+                ("Jack", 10),
+                ("Queen", 10),
+                ("King", 10),
+                ("A", 11)
+            };
             cards.Clear();
-    
+
             for (int i = 1; i <= nrofdecks; i++)
             {
                 for (int suit = 0; suit < 4; suit++)
                 {
-                    for (int value = 1; value <= 13; value++)
+                    for (int value = 0; value < 13; value++)
                     {
-                        cards.Add(new Card(value, (SuitType)suit));
+                        currcard = new Card(cardInfo[value].CardType, (SuitType)suit);
+                        currcard.BlackJackValue = cardInfo[value].CardValue;
+                        cards.Add(currcard);
                     }
                 }
             }
-    
+
             Shuffle();
         }
 
@@ -117,10 +136,6 @@ namespace Blackjack
     public class Controller
     {
         protected Card LastDrawnCard;
-
-        protected int LowValue;
-        protected int HighValue;
-        protected int BestValue;
 
         public void Reset(List<Card> Hand)
         {
@@ -221,23 +236,19 @@ namespace Blackjack
                     {
                         Dealer.Hand.Add(Deck.Draw());
                     }
-            
-                    return;
                 }
                 else
                 {
-
                     for (int i = 0; i < amount; i++)
                     {
                         players[CurrPlayerIndex].Hand.Add(Deck.Draw());
                     }
-                    
-            
-                    return;
                 }
             }
-    
-            Deck.ResetAndShuffle();
+            else
+            {
+                Deck.ResetAndShuffle();
+            }
         }
 
         public void NextPlayer()
@@ -263,21 +274,9 @@ namespace Blackjack
             timed.Start();
         
             int TotalDecks = 6;
-        
-            Game game = new Game(playerCount: 2);
+
+            Game game = new Game(playerCount : 2);
             game.StartGame(TotalDecks);
-
-            game.Draw(isdealer : false, game.Player, 1);
-            Console.WriteLine("{0} has {1} cards in hand", game.Player.PlayerName, game.Player.handsize);
-            game.Draw(isdealer : false, game.Player, 2);
-            Console.WriteLine("{0} has {1} cards in hand", game.Player.PlayerName, game.Player.handsize);
-
-            game.NextPlayer();
-
-            game.Draw(isdealer: false, game.Player, 2);
-            Console.WriteLine("{0} has {1} cards in hand", game.Player.PlayerName, game.Player.handsize);
-            game.Draw(isdealer: false, game.Player, 5);
-            Console.WriteLine("{0} has {1} cards in hand", game.Player.PlayerName, game.Player.handsize);
 
             timed.Stop();
             TimeSpan timexe = timed.Elapsed;

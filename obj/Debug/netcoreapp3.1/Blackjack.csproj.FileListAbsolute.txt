@@ -11,3 +11,16 @@ C:\Users\19kathor\source\repos\Blackjack\bin\Debug\netcoreapp3.1\Blackjack.pdb
 C:\Users\19kathor\source\repos\Blackjack\obj\Debug\netcoreapp3.1\Blackjack.dll
 C:\Users\19kathor\source\repos\Blackjack\obj\Debug\netcoreapp3.1\Blackjack.pdb
 C:\Users\19kathor\source\repos\Blackjack\obj\Debug\netcoreapp3.1\Blackjack.genruntimeconfig.cache
+C:\Users\kaspe\OneDrive\Desktop\BlackJack-CSharp\bin\Debug\netcoreapp3.1\Blackjack.exe
+C:\Users\kaspe\OneDrive\Desktop\BlackJack-CSharp\bin\Debug\netcoreapp3.1\Blackjack.deps.json
+C:\Users\kaspe\OneDrive\Desktop\BlackJack-CSharp\bin\Debug\netcoreapp3.1\Blackjack.runtimeconfig.json
+C:\Users\kaspe\OneDrive\Desktop\BlackJack-CSharp\bin\Debug\netcoreapp3.1\Blackjack.runtimeconfig.dev.json
+C:\Users\kaspe\OneDrive\Desktop\BlackJack-CSharp\bin\Debug\netcoreapp3.1\Blackjack.dll
+C:\Users\kaspe\OneDrive\Desktop\BlackJack-CSharp\bin\Debug\netcoreapp3.1\Blackjack.pdb
+C:\Users\kaspe\OneDrive\Desktop\BlackJack-CSharp\obj\Debug\netcoreapp3.1\Blackjack.csprojAssemblyReference.cache
+C:\Users\kaspe\OneDrive\Desktop\BlackJack-CSharp\obj\Debug\netcoreapp3.1\Blackjack.AssemblyInfoInputs.cache
+C:\Users\kaspe\OneDrive\Desktop\BlackJack-CSharp\obj\Debug\netcoreapp3.1\Blackjack.AssemblyInfo.cs
+C:\Users\kaspe\OneDrive\Desktop\BlackJack-CSharp\obj\Debug\netcoreapp3.1\Blackjack.csproj.CoreCompileInputs.cache
+C:\Users\kaspe\OneDrive\Desktop\BlackJack-CSharp\obj\Debug\netcoreapp3.1\Blackjack.dll
+C:\Users\kaspe\OneDrive\Desktop\BlackJack-CSharp\obj\Debug\netcoreapp3.1\Blackjack.pdb
+C:\Users\kaspe\OneDrive\Desktop\BlackJack-CSharp\obj\Debug\netcoreapp3.1\Blackjack.genruntimeconfig.cache
